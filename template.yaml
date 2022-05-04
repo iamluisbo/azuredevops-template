@@ -1,6 +1,8 @@
 trigger:
   - main
 
+pool: Default
+
 jobs:
 - job: test
   displayName: test
