@@ -6,8 +6,5 @@ pool: Default
 extends:
   template: parameters.yml
 
-jobs:
-- job: test
-  displayName: test
-  steps:
+steps:
   - script: echo ${{ parameters.test }}
