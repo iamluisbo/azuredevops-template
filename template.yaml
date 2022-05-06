@@ -3,8 +3,11 @@ trigger:
 
 pool: Default
 
+extends:
+  template: parameters.yml
+
 jobs:
 - job: test
   displayName: test
   steps:
-  - script: echo Test Luis 1
+  - script: echo ${{ parameters.test }}
