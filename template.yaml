@@ -5,6 +5,3 @@ pool: Default
 
 extends:
   template: parameters.yml
-
-steps:
-  - script: echo ${{ parameters.test }}
