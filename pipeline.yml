@@ -3,8 +3,9 @@ trigger:
 
 pool: default
 
-jobs:
-- job: test
-  displayName: test
-  steps:
-  - script: echo test
+steps:
+  template: template.yml
+  parameters:
+    envs: [ "OA", "ProgressivelL", "USAA", "yyy", "nir"]
+    branches: [ "Main", "Release"]
+    tenant: [ "BOLT"]
