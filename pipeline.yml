@@ -3,5 +3,8 @@ trigger:
 
 pool: default
 
-steps:
-  - script: echo HELLO
+jobs:
+- job: test
+  displayName: test
+  steps:
+  - script: echo test
