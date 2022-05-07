@@ -4,8 +4,8 @@ trigger:
 pool: default
 
 steps:
-  template: template.yml
-  parameters:
-    envs: [ "OA", "ProgressivelL", "USAA", "yyy", "nir"]
-    branches: [ "Main", "Release"]
-    tenant: [ "BOLT"]
+  - template: template.yml
+    parameters:
+      envs: [ "OA", "ProgressivelL", "USAA", "yyy", "nir"]
+      branches: [ "Main", "Release"]
+      tenant: [ "BOLT"]
