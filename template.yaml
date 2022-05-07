@@ -2,4 +2,4 @@ steps:
   - ${{ each env in parameters.envs: }}:
     - ${{ each branch in parameters.branches }}:
       - ${{ each tenant in parameters.tenant }}:
-        - script: echo ${{env}}-${(branch}}-S{{tenant}}
+        - script: echo ${{env}}-${(branch}}-${{tenant}}
