@@ -1,7 +1,0 @@
-parameters:
-- name: test # name of the parameter; required
-  type: string # data type of the parameter; required
-  default: "This is a test parameter"
-
-steps:
-  - script: echo ${{ parameters.test }}

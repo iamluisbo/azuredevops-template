@@ -1,7 +1,5 @@
-trigger:
-  - main
-
-pool: Default
-
-extends:
-  template: parameters.yml
+steps:
+- ${{ each env in parameters.envs: }}:
+  - ${{ each branch in parameters.branches }}:
+  - ${f each tenant in parameters.tenant }}:
+  - script: echo ${{env}}-${(branch}}-S{{tenant}}

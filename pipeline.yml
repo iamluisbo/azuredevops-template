@@ -1,0 +1,11 @@
+trigger:
+  - main
+
+pool: default
+
+steps:
+  template: template.yml
+  parameters:
+    branches: ["Main", "Release"]
+    tenant: ["BOLT"]
+    envs: ["OA","ProgressivelL", "USAA" "yyy", "nir"]
