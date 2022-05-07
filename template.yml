@@ -1,5 +1,3 @@
-trigger: none
-
 steps:
   - ${{ each env in parameters.envs }}:
     - ${{ each branch in parameters.branches }}:
